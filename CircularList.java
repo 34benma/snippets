@@ -29,8 +29,8 @@ class CircularList {
 		return;
 	}
 	
-	public String toString(ListNode headNode) {
-		ListNode currentNode = headNode;
+	public String toString(CLLNode headNode) {
+		CLLNode currentNode = headNode;
 		StringBuilder sb = new StringBuilder();
 		sb.append("[");
 		while(currentNode != null) {
@@ -46,9 +46,9 @@ class CircularList {
 	
 	class CLLNode {
 		private int data;
-		private ListNode next;
+		private CLLNode next;
 		
-		public ListNode(int data) {
+		public CLLNode(int data) {
 			this.data = data;
 		}
 		
@@ -60,11 +60,11 @@ class CircularList {
 			return data;
 		}
 		
-		public void setNext(ListNode next) {
+		public void setNext(CLLNode next) {
 			this.next = next;
 		}
 		
-		public ListNode getNext() {
+		public CLLNode getNext() {
 			return next;
 		}
 	}
